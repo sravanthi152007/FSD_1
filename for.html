@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Loops in JavaScript</title>
+</head>
+<body>
+
+<h2>Printing Object Data Using Different Loops</h2>
+<p id="forin"></p>
+<p id="foreach"></p>
+<p id="forof"></p>
+
+<script>
+// Creating an object
+const student = {
+    name: "Sravanthi",
+    age: 19,
+    course: "B.Tech",
+    city: "Ongole"
+};
+
+// 1. Using for-in loop (used directly with objects)
+let text1 = "Using for-in loop:<br>";
+for (let key in student) {
+    text1 += key + " : " + student[key] + "<br>";
+}
+document.getElementById("forin").innerHTML = text1;
+
+
+// 2. Using forEach loop (convert object to array first)
+let text2 = "Using forEach loop:<br>";
+Object.entries(student).forEach(function([key, value]) {
+    text2 += key + " : " + value + "<br>";
+});
+document.getElementById("foreach").innerHTML = text2;
+
+
+// 3. Using for-of loop (used with iterable objects)
+let text3 = "Using for-of loop:<br>";
+for (let [key, value] of Object.entries(student)) {
+    text3 += key + " : " + value + "<br>";
+}
+document.getElementById("forof").innerHTML = text3;
+
+</script>
+
+</body>
+</html>
+

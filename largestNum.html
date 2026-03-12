@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Largest Number</title>
+    <script>
+        function findLargest() {
+            // Get numbers from user
+            var num1 = parseInt(prompt("Enter first integer:"));
+            var num2 = parseInt(prompt("Enter second integer:"));
+            var num3 = parseInt(prompt("Enter third integer:"));
+
+            // Check for equal numbers
+            if (num1 == num2 && num2 == num3) {
+                alert("EQUAL NUMBERS");
+            } 
+            else {
+                // Find the largest number
+                var largest = num1;
+
+                if (num2 > largest) {
+                    largest = num2;
+                }
+                if (num3 > largest) {
+                    largest = num3;
+                }
+
+                // Display result
+                alert(largest + " LARGER NUMBER");
+            }
+        }
+    </script>
+</head>
+
+<body onload="findLargest()">
+    <h2>Check the Largest Number</h2>
+</body>
+</html>
