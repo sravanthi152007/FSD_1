@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Defined Object</title>
+</head>
+<body>
+
+<script>
+// Constructor function
+function Student(name, age) {
+    this.name = name;   // property
+    this.age = age;
+
+    // Method
+    this.display = function() {
+        return "Name: " + this.name + ", Age: " + this.age;
+    };
+}
+
+// Create object
+let s1 = new Student("John", 20);
+
+// Accessor (getter)
+Object.defineProperty(s1, "info", {
+    get: function() {
+        return this.name + " is " + this.age + " years old";
+    }
+});
+
+// Display output
+document.write(s1.display() + "<br>");
+document.write("Accessor Output: " + s1.info);
+</script>
+
+</body>
+</html>

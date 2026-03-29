@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Window Object Example</title>
+
+<script>
+function showMessage()
+{
+    // Window object method
+    window.alert("Welcome to JavaScript Window Object Example");
+
+    // Window object property
+    var width = window.innerWidth;
+    var height = window.innerHeight;
+
+    document.getElementById("result").innerHTML =
+    "Window Width: " + width + "<br>Window Height: " + height;
+}
+
+function openNewWindow()
+{
+    // Window object method
+    window.open("https://www.google.com");
+}
+</script>
+
+</head>
+
+<body>
+
+<h2>Window Object Properties and Methods</h2>
+
+<button onclick="showMessage()">Show Window Size</button>
+<br><br>
+
+<button onclick="openNewWindow()">Open Google</button>
+
+<p id="result"></p>
+
+</body>
+</html>
+

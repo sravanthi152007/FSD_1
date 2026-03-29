@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Array Object Example</title>
+
+<script>
+function showArray()
+{
+    // Creating an array
+    var subjects = ["FSD", "DBMS", "OS", "CN"];
+
+    // Array property
+    var length = subjects.length;
+
+    // Array methods
+    subjects.push("JAVA");   // add element
+    subjects.pop();            // remove last element
+    subjects.sort();           // sort elements
+
+    document.getElementById("result").innerHTML =
+    "Array Elements: " + subjects + "<br>" +
+    "Length of Array: " + length;
+}
+</script>
+
+</head>
+
+<body>
+
+<h2>Array Object Properties and Methods</h2>
+
+<button onclick="showArray()">Show Array Details</button>
+
+<p id="result"></p>
+
+</body>
+</html>
+

@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>String Object Example</title>
+
+<script>
+function showString()
+{
+    var str = document.getElementById("text").value;
+
+    // String property
+    var length = str.length;
+
+    // String methods
+    var upper = str.toUpperCase();
+    var lower = str.toLowerCase();
+    var firstChar = str.charAt(0);
+
+    document.getElementById("result").innerHTML =
+    "Original String: " + str + "<br>" +
+    "Length of String: " + length + "<br>" +
+    "Upper Case: " + upper + "<br>" +
+    "Lower Case: " + lower + "<br>" +
+    "First Character: " + firstChar;
+}
+</script>
+
+</head>
+
+<body>
+
+<h2>String Object Properties and Methods</h2>
+
+Enter a String:
+<input type="text" id="text"><br><br>
+
+<button onclick="showString()">Show Result</button>
+
+<p id="result"></p>
+
+</body>
+</html>
+

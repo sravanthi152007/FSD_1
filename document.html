@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Full Stack Development</title>
+
+<script>
+function showDetails()
+{
+    // Using document property
+    var pageTitle = document.title;
+
+    // Using document method
+    var name = document.getElementById("username").value;
+
+    document.getElementById("result").innerHTML =
+    "Hello " + name + "<br>Page Title is: " + pageTitle;
+}
+</script>
+
+</head>
+
+<body>
+
+<h2>Document Object Properties and Methods</h2>
+
+Enter your name:
+<input type="text" id="username"><br><br>
+
+<button onclick="showDetails()">Click Here</button>
+
+<p id="result"></p>
+
+</body>
+</html>
+

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RegExp Example</title>
+</head>
+<body>
+
+<script>
+let text = "Hello123";
+
+// Create regex pattern
+let pattern = /[0-9]+/;
+
+// Test method
+let result = pattern.test(text);
+
+// Exec method
+let match = pattern.exec(text);
+
+document.write("Text: " + text + "<br>");
+document.write("Contains digits? " + result + "<br>");
+document.write("Matched value: " + match);
+</script>
+
+</body>
+</html>
